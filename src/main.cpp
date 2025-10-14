@@ -8,19 +8,19 @@
 #include <ArduinoJson.h>
 
 // Configuración WiFi
-const char* ssid = "MAXELL_2.4_F2F";
-const char* password = "a1b2c3d4";
+const char* ssid = "PcAngie";
+const char* password = "Ac.30098@";
 
 // Configuración MQTT
-const char* mqtt_broker = "uceva-iot-core.freeddns.org";  // Broker MQTT con TLS
+const char* mqtt_broker = "mqtt.ota-angie.freeddns.org";  // Broker MQTT con TLS
 const int mqtt_port = 8883;                                // Puerto para MQTT con TLS
 const char* mqtt_topic = "dispositivo/device1/ota";
 const char* mqtt_client_id = "ESP32Client";
-const char* mqtt_username = "admin";  // Opcional: usuario MQTT
-const char* mqtt_password = "admin1234"; // Opcional: contraseña MQTT
+const char* mqtt_username = "alvaro";  // Opcional: usuario MQTT
+const char* mqtt_password = "supersecreto"; // Opcional: contraseña MQTT
 
 // URL para OTA
-const char* ota_url = "https://uceva-iot-core.freeddns.org/firmware.bin";
+const char* ota_url = "app.ota-angie.freeddns.org";
 
 // Certificado de Let's Encrypt para uceva-iot-core.freeddns.org
 const char* root_ca = \
