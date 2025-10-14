@@ -22,6 +22,7 @@ const char* mqtt_password = "supersecreto"; // Opcional: contraseña MQTT
 // URL para OTA
 const char* ota_url = "app.ota-angie.freeddns.org";
 
+
 // Certificado de Let's Encrypt para uceva-iot-core.freeddns.org
 const char* root_ca = \
 "-----BEGIN CERTIFICATE-----\n" \
@@ -97,7 +98,7 @@ void onMqttMessage(char* topic, byte* payload, unsigned int length) {
   StaticJsonDocument<512> doc;
   DeserializationError error = deserializeJson(doc, message);
   if (error) {
-    Serial.println("[MQTT] Error al parsear JSON");
+    Serial.println("[MQTT] Error al parsear JSON!");
     return;
   }
 
